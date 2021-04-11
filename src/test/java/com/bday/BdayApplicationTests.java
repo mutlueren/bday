@@ -17,9 +17,9 @@ class BdayApplicationTests {
     public void birthdayServiceSetTimeTest() {
         String result = bdayService.setTime(LocalDate.of(1995, 03, 02));
         System.out.println(result);
+        assertNotNull(result);        
         assertNotEquals(result,"Please insert a valid birthday.");
         assertNotEquals(result,"HAPPY BIRTHDAY!");
-        assertNotNull(result);
     }
 
 }
